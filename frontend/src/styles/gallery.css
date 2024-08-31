@@ -77,6 +77,28 @@ a > h3 {
   grid-column: span 2;
 }
 
+
+.modal{
+  top:0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  height: 95%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
 @media (max-width:900px){
   .gallery-grid{
     grid-template-columns: 1fr 1fr 1fr;

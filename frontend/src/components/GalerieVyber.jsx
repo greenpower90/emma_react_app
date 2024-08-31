@@ -10,6 +10,8 @@ function GalerieVyber() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const location = useLocation();
+    
+
 
     useEffect(() => {
         const queryParams = new URLSearchParams(location.search);
