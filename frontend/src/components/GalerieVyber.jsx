@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
+import GalleryGrid from "./GalleryGrid";
+import "../styles/gallery.css"
+import "../styles/gallery_main.css"
+import "../styles/image.css"
 
 function GalerieVyber() {
     const [data, setGalleryData] = useState(null);
@@ -44,7 +48,9 @@ function GalerieVyber() {
         return <p>Error: {error}</p>;
     }
 
-    return data ? <p>Hello: {data.galleryName}</p> : <p>No data available</p>;
+    return data ? <div>
+        <h2>{data.galleryName}</h2>
+        <GalleryGrid Src={data.galleryData}/></div> : <p>No data available</p>;
 }
 
 export default GalerieVyber;
