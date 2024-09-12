@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import "../styles/gallery.css"
+import ModalGallery from "./ModalGallery";
+
+
 
 function GalleryGrid(props) {
     const pictureDataAll = props.Src
@@ -12,22 +15,6 @@ function GalleryGrid(props) {
         setSelectedImage(selectedImage)
         setIsModalOpen(true)
         setIndex(index)
-    }
-
-    function closeModal(){
-        setIsModalOpen(false)
-    }
-
-    function nextPicture(index){
-      const newIndex = index + 1 < pictureDataAll.length ? index + 1 : 0
-      setIndex(newIndex)
-      setSelectedImage(pictureDataAll[newIndex])
-    }
-
-    function previousPicture(index){
-      const newIndex = index - 1 < 0 ? pictureDataAll.length -1 : index - 1
-      setIndex(newIndex)
-      setSelectedImage(pictureDataAll[newIndex])
     }
 
     return (<div>
@@ -46,20 +33,16 @@ function GalleryGrid(props) {
         </div>
 
         {isModalOpen && (
-        <div className="modal" >
-          <div onClick={()=>{previousPicture(index)}} style={{color: "white"}}>PREVIOUS</div>
-          <div className="modal-content">
-            <img onClick={closeModal} src={'http://localhost:5000'+selectedImage.fileLocation.full} alt="Full size" style={{ maxWidth: '100%', height: '100%' }} />
-            
-          </div>
-          <div onClick={()=>{nextPicture(index)}} style={{color: "white"}}>NEXT</div>
-        </div>
+         <ModalGallery 
+            index={index}
+            setIndex={setIndex} 
+            selectedImage={selectedImage}
+            setSelectedImage={setSelectedImage}
+            pictureDataAll={pictureDataAll}
+            setIsModalOpen={setIsModalOpen}
+        />
       )}
-
-
-
-    </div>
-        
+    </div>    
     );
 }
 
