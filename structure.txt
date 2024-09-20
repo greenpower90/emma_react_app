@@ -1,0 +1,404 @@
+.
+|-- data
+|   |-- gallery_data.js
+|   |-- main-picture-quotes-generator.js
+|   |-- main-picture.js
+|   |-- overviews-data.js
+|   |-- panebozejenomtone.txt
+|   `-- quotes.js
+|-- frontend
+|   |-- README.md
+|   |-- build
+|   |   |-- Images
+|   |   |   |-- 1.jpg
+|   |   |   |-- 10.jpg
+|   |   |   |-- 11.jpg
+|   |   |   |-- 12.jpg
+|   |   |   |-- 13.jpg
+|   |   |   |-- 14.jpg
+|   |   |   |-- 2.jpg
+|   |   |   |-- 3.jpg
+|   |   |   |-- 4.jpg
+|   |   |   |-- 5.jpg
+|   |   |   |-- 6.jpg
+|   |   |   |-- 7.jpg
+|   |   |   |-- 7.png
+|   |   |   |-- 8.jpg
+|   |   |   `-- 9.jpg
+|   |   |-- asset-manifest.json
+|   |   |-- favicon.ico
+|   |   |-- icons
+|   |   |   |-- QR_code_kontoB.png
+|   |   |   |-- android-chrome-192x192.png
+|   |   |   |-- android-chrome-512x512.png
+|   |   |   |-- apple-touch-icon.png
+|   |   |   |-- arrow-previous.png
+|   |   |   |-- arrow-right.png
+|   |   |   |-- arrow.png
+|   |   |   |-- arrow_next_left_icon.png
+|   |   |   |-- arrow_next_right_icon.png
+|   |   |   |-- bandzone.jpg
+|   |   |   |-- dolphin.webp
+|   |   |   |-- favicon-16x16.png
+|   |   |   |-- favicon-32x32.png
+|   |   |   |-- favicon.ico
+|   |   |   |-- fb-gray.svg
+|   |   |   |-- fb-icon.png
+|   |   |   |-- hamburger-icon.png
+|   |   |   |-- home.png
+|   |   |   |-- icon.jpg
+|   |   |   |-- linkedin-gray.svg
+|   |   |   |-- linkedin.png
+|   |   |   |-- mail.png
+|   |   |   |-- mail.svg
+|   |   |   |-- next.ico
+|   |   |   |-- previous.ico
+|   |   |   |-- random.png
+|   |   |   |-- shark.png
+|   |   |   |-- triangle.png
+|   |   |   |-- youtube-2433301_640.webp
+|   |   |   |-- youtube-channel-picture.jpg
+|   |   |   |-- youtube-gray.svg
+|   |   |   `-- youtube.jpg
+|   |   |-- index.html
+|   |   |-- logo192.png
+|   |   |-- logo512.png
+|   |   |-- manifest.json
+|   |   |-- robots.txt
+|   |   `-- static
+|   |       |-- css
+|   |       |   |-- main.bbd90463.css
+|   |       |   `-- main.bbd90463.css.map
+|   |       `-- js
+|   |           |-- 453.8ab44547.chunk.js
+|   |           |-- 453.8ab44547.chunk.js.map
+|   |           |-- main.44ced3f3.js
+|   |           |-- main.44ced3f3.js.LICENSE.txt
+|   |           `-- main.44ced3f3.js.map
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- public
+|   |   |-- Images
+|   |   |   |-- 1.jpg
+|   |   |   |-- 10.jpg
+|   |   |   |-- 11.jpg
+|   |   |   |-- 12.jpg
+|   |   |   |-- 13.jpg
+|   |   |   |-- 14.jpg
+|   |   |   |-- 2.jpg
+|   |   |   |-- 3.jpg
+|   |   |   |-- 4.jpg
+|   |   |   |-- 5.jpg
+|   |   |   |-- 6.jpg
+|   |   |   |-- 7.jpg
+|   |   |   |-- 7.png
+|   |   |   |-- 8.jpg
+|   |   |   `-- 9.jpg
+|   |   |-- favicon.ico
+|   |   |-- icons
+|   |   |   |-- QR_code_kontoB.png
+|   |   |   |-- android-chrome-192x192.png
+|   |   |   |-- android-chrome-512x512.png
+|   |   |   |-- apple-touch-icon.png
+|   |   |   |-- arrow-previous.png
+|   |   |   |-- arrow-right.png
+|   |   |   |-- arrow.png
+|   |   |   |-- arrow_next_left_icon.png
+|   |   |   |-- arrow_next_right_icon.png
+|   |   |   |-- bandzone.jpg
+|   |   |   |-- dolphin.webp
+|   |   |   |-- favicon-16x16.png
+|   |   |   |-- favicon-32x32.png
+|   |   |   |-- favicon.ico
+|   |   |   |-- fb-gray.svg
+|   |   |   |-- fb-icon.png
+|   |   |   |-- hamburger-icon.png
+|   |   |   |-- home.png
+|   |   |   |-- icon.jpg
+|   |   |   |-- linkedin-gray.svg
+|   |   |   |-- linkedin.png
+|   |   |   |-- mail.png
+|   |   |   |-- mail.svg
+|   |   |   |-- next.ico
+|   |   |   |-- previous.ico
+|   |   |   |-- random.png
+|   |   |   |-- shark.png
+|   |   |   |-- triangle.png
+|   |   |   |-- youtube-2433301_640.webp
+|   |   |   |-- youtube-channel-picture.jpg
+|   |   |   |-- youtube-gray.svg
+|   |   |   `-- youtube.jpg
+|   |   |-- index.html
+|   |   |-- logo192.png
+|   |   |-- logo512.png
+|   |   |-- manifest.json
+|   |   `-- robots.txt
+|   `-- src
+|       |-- App.css
+|       |-- App.js
+|       |-- App.test.js
+|       |-- components
+|       |   |-- About.jsx
+|       |   |-- Article.jsx
+|       |   |-- ArticleOverview.jsx
+|       |   |-- Galerie.jsx
+|       |   |-- GalerieVyber.jsx
+|       |   |-- GalleryGrid.jsx
+|       |   |-- GallerySub.jsx
+|       |   |-- Intermezzo.jsx
+|       |   |-- MainPage.jsx
+|       |   |-- Mainpicture.jsx
+|       |   |-- Menutitle.jsx
+|       |   |-- ModalBtn.jsx
+|       |   |-- ModalGallery.jsx
+|       |   |-- Navbar.jsx
+|       |   |-- OverviewGrid.jsx
+|       |   |-- Quote.jsx
+|       |   |-- SortOverview.jsx
+|       |   `-- overview.jsx
+|       |-- index.css
+|       |-- index.js
+|       |-- logo.svg
+|       |-- reportWebVitals.js
+|       |-- setupTests.js
+|       `-- styles
+|           |-- article.css
+|           |-- gallery.css
+|           |-- gallery_main.css
+|           |-- general.css
+|           |-- image.css
+|           `-- navbar.css
+|-- index.js
+|-- package-lock.json
+|-- package.json
+|-- public
+|   |-- Images
+|   |   |-- 1.jpg
+|   |   |-- 10.jpg
+|   |   |-- 11.jpg
+|   |   |-- 12.jpg
+|   |   |-- 13.jpg
+|   |   |-- 14.jpg
+|   |   |-- 2.jpg
+|   |   |-- 3.jpg
+|   |   |-- 4.jpg
+|   |   |-- 5.jpg
+|   |   |-- 6.jpg
+|   |   |-- 7.jpg
+|   |   |-- 7.png
+|   |   |-- 8.jpg
+|   |   `-- 9.jpg
+|   |-- gallery
+|   |   |-- gallery-jana-plavec.jpg
+|   |   |-- gallery-petra-klackova.JPG
+|   |   |-- gallery-social.jpg
+|   |   |-- pictures
+|   |   |   |-- gal-igm-001full.JPG
+|   |   |   |-- gal-igm-001small.JPG
+|   |   |   |-- gal-igm-002full.jpg
+|   |   |   |-- gal-igm-002small.jpg
+|   |   |   |-- gal-igm-003full.jpg
+|   |   |   |-- gal-igm-003small.jpg
+|   |   |   |-- gal-igm-004full.jpg
+|   |   |   |-- gal-igm-004small.jpg
+|   |   |   |-- gal-igm-005full.jpg
+|   |   |   |-- gal-igm-005small.jpg
+|   |   |   |-- gal-igm-006full.jpg
+|   |   |   |-- gal-igm-006small.jpg
+|   |   |   |-- gal-igm-007full.jpg
+|   |   |   |-- gal-igm-007small.jpg
+|   |   |   |-- gal-igm-008full.jpg
+|   |   |   |-- gal-igm-008small.jpg
+|   |   |   |-- gal-igm-010full.JPG
+|   |   |   |-- gal-igm-010small.JPG
+|   |   |   |-- gal-igm-011full.jpg
+|   |   |   |-- gal-igm-011small.jpg
+|   |   |   |-- gal-igm-012full.jpg
+|   |   |   |-- gal-igm-012small.jpg
+|   |   |   |-- gal-igm-014full.jpg
+|   |   |   |-- gal-igm-014small.jpg
+|   |   |   |-- gal-igm-015full.jpg
+|   |   |   |-- gal-igm-015small.jpg
+|   |   |   |-- gal-igm-016full.jpg
+|   |   |   |-- gal-igm-016small.jpg
+|   |   |   |-- gal-igm-017full.jpg
+|   |   |   |-- gal-igm-017small.jpg
+|   |   |   |-- gal-igm-018full.jpg
+|   |   |   |-- gal-igm-018small.jpg
+|   |   |   |-- gal-igm-019full.jpg
+|   |   |   |-- gal-igm-019small.jpg
+|   |   |   |-- gal-igm-020full.jpg
+|   |   |   |-- gal-igm-020small.jpg
+|   |   |   |-- gal-igm-021full.jpg
+|   |   |   |-- gal-igm-021small.jpg
+|   |   |   |-- gal-igm-022full.jpg
+|   |   |   |-- gal-igm-022small.jpg
+|   |   |   |-- gal-igm-023full.jpg
+|   |   |   |-- gal-igm-023small.jpg
+|   |   |   |-- gal-igm-024full.jpg
+|   |   |   |-- gal-igm-024small.jpg
+|   |   |   |-- gal-igm-025full.jpg
+|   |   |   |-- gal-igm-025small.jpg
+|   |   |   |-- gal-igm-026full.jpg
+|   |   |   |-- gal-igm-026small.jpg
+|   |   |   |-- gal-igm-027full.jpg
+|   |   |   |-- gal-igm-027small.jpg
+|   |   |   |-- gal-igm-028full.jpg
+|   |   |   |-- gal-igm-028small.jpg
+|   |   |   |-- gal-igm-029full.jpg
+|   |   |   |-- gal-igm-029small.jpg
+|   |   |   |-- gal-igm-030full.jpg
+|   |   |   |-- gal-igm-030small.jpg
+|   |   |   |-- gal-igm-031full.jpg
+|   |   |   |-- gal-igm-031small.jpg
+|   |   |   |-- gal-igm-032full.jpg
+|   |   |   |-- gal-igm-032small.jpg
+|   |   |   |-- gal-igm-033full.jpg
+|   |   |   |-- gal-igm-033small.jpg
+|   |   |   |-- gal-igm-034full.jpg
+|   |   |   |-- gal-igm-034small.jpg
+|   |   |   |-- gal-igm-035full.jpg
+|   |   |   `-- gal-igm-035small.jpg
+|   |   |-- pohledem_jany_plavec
+|   |   |   |-- gal-jp-img-001full.JPG
+|   |   |   |-- gal-jp-img-001small.JPG
+|   |   |   |-- gal-jp-img-002full.JPG
+|   |   |   |-- gal-jp-img-002small.JPG
+|   |   |   |-- gal-jp-img-003full.JPG
+|   |   |   |-- gal-jp-img-003small.JPG
+|   |   |   |-- gal-jp-img-004full.JPG
+|   |   |   |-- gal-jp-img-004small.JPG
+|   |   |   |-- gal-jp-img-005full.JPG
+|   |   |   |-- gal-jp-img-005small.JPG
+|   |   |   |-- gal-jp-img-006full.JPG
+|   |   |   |-- gal-jp-img-006small.JPG
+|   |   |   |-- gal-jp-img-007full.JPG
+|   |   |   |-- gal-jp-img-007small.JPG
+|   |   |   |-- gal-jp-img-008full.JPG
+|   |   |   |-- gal-jp-img-008small.JPG
+|   |   |   |-- gal-jp-img-009full.JPG
+|   |   |   |-- gal-jp-img-009small.JPG
+|   |   |   |-- gal-jp-img-010full.JPG
+|   |   |   |-- gal-jp-img-010small.JPG
+|   |   |   |-- gal-jp-img-011full.JPG
+|   |   |   |-- gal-jp-img-011small.JPG
+|   |   |   |-- gal-jp-img-012full.JPG
+|   |   |   |-- gal-jp-img-012small.JPG
+|   |   |   |-- gal-jp-img-013full.JPG
+|   |   |   |-- gal-jp-img-013small.JPG
+|   |   |   |-- gal-jp-img-014full.JPG
+|   |   |   |-- gal-jp-img-014small.JPG
+|   |   |   |-- gal-jp-img-015full.JPG
+|   |   |   |-- gal-jp-img-015small.JPG
+|   |   |   |-- gal-jp-img-016full.JPG
+|   |   |   `-- gal-jp-img-016small.JPG
+|   |   `-- pohledem_petry_klackove
+|   |       |-- gal-pk-img-001full.JPG
+|   |       |-- gal-pk-img-001small.JPG
+|   |       |-- gal-pk-img-002full.JPG
+|   |       |-- gal-pk-img-002small.JPG
+|   |       |-- gal-pk-img-003full.JPG
+|   |       |-- gal-pk-img-003small.JPG
+|   |       |-- gal-pk-img-004full.JPG
+|   |       |-- gal-pk-img-004small.JPG
+|   |       |-- gal-pk-img-005full.JPG
+|   |       |-- gal-pk-img-005small.JPG
+|   |       |-- gal-pk-img-006full.JPG
+|   |       |-- gal-pk-img-006small.JPG
+|   |       |-- gal-pk-img-007full.JPG
+|   |       |-- gal-pk-img-007small.JPG
+|   |       `-- gallery-petra-klackova.JPG
+|   `-- pictures
+|       |-- OSUD.jpeg
+|       |-- Untitled.png
+|       |-- a-co-ted
+|       |   |-- a-co-ted-overview.jpg
+|       |   `-- a-co-ted.jpg
+|       |-- a-co-ted.jpeg
+|       |-- babi
+|       |   |-- babi-1.jpg
+|       |   |-- babi-2.jpeg
+|       |   |-- babi-top-overview.JPEG
+|       |   `-- babi-top.JPEG
+|       |-- covece-ja-se-nemuzu-pohnout.jpg
+|       |-- covece-nemuzu-se-pohnout
+|       |   |-- nemuzu-se-pohnout-overview.jpg
+|       |   `-- nemuzu-se-pohnout.jpg
+|       |-- hlavni-fotka.jpg
+|       |-- hvar
+|       |   |-- hvar-1.jpg
+|       |   |-- hvar-overview.jpg
+|       |   `-- hvar.jpg
+|       |-- inspirace
+|       |   |-- energie-ciste-lasky.jpg
+|       |   |-- nemohl-se-mnou-mluvit.jpg
+|       |   `-- to-nejlepsi-nelze-rici.jpg
+|       |-- jakub-oci.jpeg
+|       |-- jakub-zarici.jpg
+|       |-- je-to-pryc
+|       |   `-- je-to-pryc.JPEG
+|       |-- joga-voda.jpg
+|       |-- jsem-emma-robinson
+|       |   |-- emma-robinson.jpg
+|       |   |-- jmenuji-se-emma-robinson-overview.jpg
+|       |   `-- jmenuji-se-emma-robinson.jpg
+|       |-- karavan
+|       |   |-- karavan-1.jpeg
+|       |   |-- karavan-2.jpeg
+|       |   |-- karavan-3.jpeg
+|       |   |-- karavan-4.jpeg
+|       |   |-- karavan-5.jpeg
+|       |   |-- karavan-top-overview.jpg
+|       |   `-- karavan-top.jpg
+|       |-- kdyz-je-v-sazce
+|       |   `-- kdyz-je-v-sazce.jpg
+|       |-- klaster tepla
+|       |   |-- klaster-tepla-1.jpg
+|       |   |-- klaster-tepla-2.jpeg
+|       |   |-- klaster-tepla-3.jpeg
+|       |   |-- klaster-tepla-top-overview.jpg
+|       |   `-- klaster-tepla-top.jpg
+|       |-- krumlov
+|       |   |-- krumlov-1.jpg
+|       |   `-- krumlov-overview.jpg
+|       |-- main-picture-small.png
+|       |-- main-picture.jpeg
+|       |-- narozeniny.jpeg
+|       |-- nekde-musi-byt-duha
+|       |   `-- nekde-musi-byt-duha.jpg
+|       |-- nelze_rici.png
+|       |-- nemuzu-se-pohnout.jpeg
+|       |-- other
+|       |   `-- sbirka-vozik.jpg
+|       |-- pane-boze-jenom-to-ne
+|       |   `-- pane-boze-jenom-to-ne.jpg
+|       |-- rac
+|       |   |-- rac-1.jpeg
+|       |   |-- rac-2.jpeg
+|       |   |-- rac-3.jpeg
+|       |   |-- rac-3.jpg
+|       |   |-- rac-4.jpeg
+|       |   |-- rac-overview-tall.jpg
+|       |   `-- rac-top.jpg
+|       |-- rozhlas
+|       |   `-- rozhlas.jpg
+|       |-- senftenberger-see
+|       |   |-- senftenberger-see-overview.jpg
+|       |   |-- senftenberger-see-top.jpg
+|       |   `-- senftenberger-see.jpg
+|       |-- senftenberger-see.png
+|       |-- senftenberger.webp
+|       |-- termalni-lazne-sturovo
+|       |   |-- sturovo-overview.jpg
+|       |   |-- sturovo-top.jpg
+|       |   |-- termalni-lazne-sturovo-1.jpeg
+|       |   |-- termalni-lazne-sturovo-2.jpeg
+|       |   |-- termalni-lazne-sturovo-3.jpeg
+|       |   `-- termalni-lazne-sturovo-4.jpeg
+|       `-- vite-ze-jste-hrdinka
+|           |-- vite-ze-jste-hrdinka-overview.jpg
+|           `-- vite-ze-jste-hrdinka.jpg
+|-- readme.txt
+`-- structure.txt
+
+40 directories, 361 files
