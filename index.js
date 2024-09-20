@@ -167,19 +167,6 @@ app.get("/article", (req, res) => {
   res.json({data: requestedArticle})
 })
 
-// API Route to handle GET request
-app.get('/api/data', (req, res) => {
-  res.json({ message: "Hello from Express!" });
-});
-
-// API Route to handle POST request
-app.post('/api/data', (req, res) => {
-    console.log(req.body)
-  const receivedData = req.body.message;
-  console.log("Data received on backend:", receivedData);
-  
-  res.json({ message: "Data received successfully", data: receivedData });
-});
 
 // Static files (for React)
 app.use(express.static(path.join(__dirname, 'frontend/build')));
