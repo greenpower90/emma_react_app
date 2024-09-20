@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import "../styles/gallery.css"
+import ModalBtn from "./ModalBtn";
 
-function ModalGallery(props){ //index, selectedImage, closeModal, pictureDataAll
+function ModalGallery(props){ //index, setIndex, selectedImage, setSelectedImage, pictureDataAll, setIsModalOpen
   
     function nextPicture(index){
       const newIndex = index + 1 < props.pictureDataAll.length ? index + 1 : 0
@@ -21,11 +22,22 @@ function ModalGallery(props){ //index, selectedImage, closeModal, pictureDataAll
   
   
     return <div className="modal" >
-            <div onClick={()=>{previousPicture(props.index)}} style={{color: "white", cursor: "pointer"}}>PREVIOUS</div>
+            <ModalBtn ClickFunction={closeModal}
+                      style="close-modal-btn"
+                      text="X"
+                      />
+            <ModalBtn ClickFunction={()=>{previousPicture(props.index)}}
+                      style="btn-left"
+                      text="předchozí"
+                      />
+            <ModalBtn ClickFunction={()=>{nextPicture(props.index)}}
+                      style="btn-right"
+                      text="další"
+                      />
             <div className="modal-content">
-              <img onClick={closeModal} src={'http://localhost:5000'+props.selectedImage.fileLocation.full} alt="Full size" style={{ maxWidth: '100%', height: '100%' }} />
+              <img  src={'http://localhost:5000'+props.selectedImage.fileLocation.full} alt="Full size" style={{ maxWidth: '100%', height: '100%' }} />
             </div>
-            <div onClick={()=>{nextPicture(props.index)}} style={{color: "white", cursor: "pointer"}}>NEXT</div>
+            
           </div>
   }
 

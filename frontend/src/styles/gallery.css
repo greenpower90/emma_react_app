@@ -98,6 +98,26 @@ a > h3 {
   border-radius: 10px;
 }
 
+.modal-btn{
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn-left{
+  left:30px
+}
+
+.btn-right{
+  right:30px
+}
+
+.close-modal-btn{
+  right: 50px;
+  top:50px
+}
+
 
 @media (max-width:900px){
   .gallery-grid{
